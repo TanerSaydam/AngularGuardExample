@@ -1,0 +1,14 @@
+<h3 class="mt-4">User Component</h3>
+<hr>
+<div class="row">
+  <div class="col-md-3">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let user of users" routerLink="/user/{{ user.id }}">
+        {{ user.name }} {{ user.lastName }}
+      </li>
+    </ul>
+  </div>
+  <div class="col-md-3">
+    <router-outlet></router-outlet>
+  </div>
+</div>
